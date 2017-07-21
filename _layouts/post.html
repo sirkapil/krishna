@@ -1,6 +1,12 @@
 ---
 layout: default
 ---
+<style type="text/css" media="print">
+.printbutton {
+  visibility: hidden;
+  display: none;
+}
+</style>
 
 
 <div class="post-title">
@@ -25,3 +31,10 @@ layout: default
 
 
 {{content}}
+
+<script>
+document.write("<input type='button' " +
+"onClick='window.print()' " +
+"class='printbutton' " +
+"value='Print This Page'/>");
+</script>
